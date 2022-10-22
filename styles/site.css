@@ -1,0 +1,102 @@
+body {
+  background-color: #b4e6e6;
+  font-family: serif;
+  line-height: 2.5;
+}
+
+em {
+  color: #3b3b3b;
+  font-style: italic;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+cite {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+}
+
+h1 {
+  color: #7d7d81;
+  font-family: fantasy;
+  font-weight: bolder;
+  letter-spacing: 0.15em;
+  word-spacing: 0.1em;
+  text-align:center;
+}
+
+h2 {
+  color: #7d7d81;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-align:center;
+}
+
+h3 {
+  color: #7d7d81;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-align:center;
+}
+
+h4 {
+  color: #7d7d81;
+  font-family: sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  text-align:center;
+}
+
+h5 {
+  color: #7d7d81;
+  font-family: sans-serif;
+  text-align:center;
+  font-size:small;
+  font-style: italic;
+}
+
+p {
+  color: #7d7d81;
+  font-size: large;
+  text-align: center;
+}
+
+li {
+  color: #7d7d81;
+}
+
+li a {
+  color: #3b3b3b;
+  font-style: italic;
+}
+
+.demopics {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.healthcarepics {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.pic {
+  padding: 10px;
+  margin: 10px;
+}
+
+caption {
+  font-size: small;
+  padding: 30px;
+}

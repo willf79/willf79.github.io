@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Willem Fargo Portfolio</title>
+</head>
+
+<style>
+  .mainbox {
+  }
+  .headerbox {
+    text-align: center;
+  }
+  .linkbox {
+    text-align: center;
+  }
+  .pfpbox {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35%;
+    max-height: 25%;
+  }
+  .pfpbox_column {
+    flex: 25%;
+    max-width: 25%;
+  }
+  .pfpbox_column img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  .pfp_img {
+    vertical-align: middle;
+    min-height: 100px;
+    max-height: 250px;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .pfpbox_column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .pfpbox_column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <div class="mainbox">
+    <div class="headerbox">
+      <h1>Willem Fargo Portfolio</h1>
+    </div>
+    <div class="pfpbox">
+      <div class="pfpbox_column">
+        <img src="personal_pictures/grad.jpg" alt="grad" title="pfp(grad)" class="pfp_img" />
+        <img src="personal_pictures/bedfordfb.jpg" alt="bedfordfb" title="pfp(bedfordfb)" class="pfp_img" />
+      </div>
+      <div class="pfpbox_column">
+        <img src="personal_pictures/prof.jpg" alt="prof" title="pfp(prof)" class="pfp_img" />
+        <img src="personal_pictures/exeterfb.jpg" alt="exeterfb" title="pfp(exeterfb)" class="pfp_img" />
+      </div>
+      <div class="pfpbox_column">
+        <img src="personal_pictures/sushi.jpg" alt="sushi" title="pfp(sushi)" class="pfp_img" />
+        <img src="personal_pictures/beach.jpg" alt="beach" title="pfp(beach)" class="pfp_img" />
+      </div>
+      <div class="pfpbox_column">
+        <img src="personal_pictures/cornellfb.jpg" alt="cornellfb" title="pfp(cornellfb)" class="pfp_img" />
+        <img src="personal_pictures/fish.jpg" alt="fish" title="pfp(fish)" class="pfp_img" />
+      </div>
+    </div>
+    <div class="linkbox">
+      <h2>Links:</h2>
+    </div>
+  </div>
+</body>
