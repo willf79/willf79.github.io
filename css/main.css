@@ -375,20 +375,54 @@ form,
 	margin-bottom: 3rem;
 }
 
+
 /**
  * floated image - (_document-setup.scss)
  * -------------------------------------------------------------------
  */
+
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
+	border: 1px solid #000000;
 }
+
+img.pull-right:hover {
+  transform: scale(1.5);
+}
+
 img.pull-left {
 	margin: .9rem 2.4rem 0 0;
+	border: 1px solid #000000;
+}
+
+img.pull-left:hover {
+  transform: scale(1.5);
 }
 
 img.ref-pics {
 	max-height: 250px;
 	max-width: 250px;
+	border: 1px solid #000000;
+}
+
+img.ref-pics:hover {
+  transform: scale(1.5);
+}
+
+img.project-plan {
+	border: 1px solid #000000;
+	max-height: 300px;
+	max-width: 100%;
+}
+
+img.project {
+	max-height: 200px;
+	max-width: 100%;
+	border: 1px solid #000000;
+}
+
+img.project:hover {
+  transform: scale(1.5);
 }
 
 /**
@@ -1109,10 +1143,9 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	left: 90px;
+	left: 45px;
 	top: 0;
 }
 header .logo {

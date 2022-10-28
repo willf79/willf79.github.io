@@ -1,56 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>homepage</title>
+  <!--- basic page needs
+   ================================================== -->
+  <meta charset="utf-8">
+  <title>Arrest Records Analysis Cambridge Semantics Intern Project</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!--<link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/> -->
-  <link rel="stylesheet" type="text/css" href="styles/site2.css" media="all"/>
+  <!-- mobile specific metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/vendor.css">
+
+  <style type="text/css" media="screen">
+    #styles {
+      background: white;
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+
+    #styles .row {
+      max-width: 1200px;
+    }
+
+    #styles .section-intro {
+      max-width: 1200px;
+    }
+  </style>
+
+  <!-- script
+   ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script src="js/pace.min.js"></script>
+
+  <!-- favicons
+	================================================== -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
 </head>
 
-<body>
+<body id="top">
 
-  <h1>New Hires Demo</h1>
+  <!-- header
+   ================================================== -->
+  <header>
+    <div class="row">
 
-  <hr />
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>Menu</span></a>
 
-  <p> This project was the start of my internship at Cambridge Semantics. We were given free reign to chose a topic and create a demo that showed off our ability to work with <em>Anzo</em>.<p>
+        <div class="logo">
+          <a href="index.html"></a>
+        </div>
 
-  <div class="demopics">
-    <div class="pic pic1">
-      <!-- Source: (original work) Willem Fargo -->
-      <img src="images/model_overview.PNG" alt="An overview of the data model." title="Data Model Overview." height=400 />
-      <caption>An overview of the data model.</caption>
+        <nav id="main-nav-wrap">
+          <ul class="main-navigation">
+            <li><a href="index.html#intro" title="">Home</a></li>
+            <li><a href="index.html#about" title="">About</a></li>
+            <li><a href="index.html#resume" title="">Resume</a></li>
+            <li><a href="index.html#portfolio" title="">Portfolio</a></li>
+            <li><a href="index.html#contact" title="">Contact</a></li>
+          </ul>
+        </nav>
+      </div> <!-- /top-bar -->
+
+    </div> <!-- /row -->
+  </header> <!-- /header -->
+
+  <!-- Style Demo
+   ================================================== -->
+  <section id="styles">
+
+    <div class="row section-intro">
+
+      <div class="col-twelve">
+        <h2>APD/NYPD Arrest Records Analysis</h2>
+        <h4>Cambridge Semantics Intern Project</h4>
+        <p>This project was the start of my internship at Cambridge Semantics. We were given free reign to chose a topic and create a demo that showed off our ability to work with <em>Anzo</em>.</p>
+      </div>
+
+    </div> <!-- /row -->
+
+    <div class="row">
+
+      <div class="col-six tab-full">
+
+        <h3>Overview</h3>
+
+        <img class="project" alt="Data model." title="An overview of the data model." src="images/arrest-demo/model_overview.PNG">
+        <p>An overview of the data model.</p>
+
+        <h3>SPARQL Query</h3>
+
+        <img class="project" alt="SPARQL race to AllRace" title="SPARQL Query connecting race CSV to AllRace class." src="images/arrest-demo/query_connect_race.PNG">
+        <p>SPARQL Query connecting race CSV data source to AllRace class.</p>
+
+
+        <img class="project" alt="Pie chart APD" title="Pie chart of race's arrested by APD." src="images/arrest-demo/apd_race_pie.PNG">
+        <p>A pie chart breakdown of race's arrested by Austin PD.</p>
+
+        <img class="project" alt="Pie chart NYPD" title="Pie chart of race's arrested by NYPD." src="images/arrest-demo/nypd_race_pie.PNG">
+        <p>A pie chart breakdown of race's arrested by New York City PD.</p>
+
+      </div>
+
+      <div class="col-six tab-full">
+
+      </div>
+
+    </div> <!-- /row -->
+
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
 
-    <div class="pic pic2">
-      <!-- Source: (original work) Willem Fargo -->
-      <img src="images/query_connect_race.PNG" alt="A SPARQL Query." title="SPARQL Query connecting race." height=400 />
-      <caption>SPARQL Query connecting race CSV data source to AllRace class.</caption>
-    </div>
-
-    <div class="pic pic3">
-      <!-- Source: (original work) Willem Fargo -->
-      <img src="images/apd_race_pie.PNG" alt="A pie chart breakdown of race's arrested by Austin PD." title="Pie chart breakdown of race's arrested by Austin PD." height=400 />
-      <caption>A pie chart breakdown of race's arrested by Austin PD.</caption>
-    </div>
-
-    <div class=" pic pic4">
-      <!-- Source: (original work) Willem Fargo -->
-      <img src="images/nypd_race_pie.PNG" alt="A pie chart breakdown of race's arrested by New York City PD." title="Pie chart breakdown of race's arrested by New York City PD." height=400 />
-      <caption>A pie chart breakdown of race's arrested by New York City PD.</caption>
-    </div>
-  </div>
-
-  <hr />
-
-  <nav>
-    <h3><a href="projects.html">Projects</a></h3>
-  </nav>
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
