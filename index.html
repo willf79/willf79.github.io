@@ -1,69 +1,689 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Willem Fargo Portfolio</title>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Willem Fargo Portfolio</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <!--<link rel="stylesheet" type="text/css" href="styles/site.css" media="all"/> -->
-  <link rel="stylesheet" type="text/css" href="styles/site2.css" media="all"/>
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <style type="text/css">
-    p {
-      text-align: center;
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
 
-    }
-  </style>
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
 </head>
-<body>
-<h1>Willem Fargo</h1>
-<hr />
- <!-- Source: (original work) Willem Fargo -->
-<img src="images/suitpic.JPG" alt="A picture of me in a suit." title="Willem Fargo in a suit." height=400 />
-<hr />
-<h3> Hello! Welcome to my personal website!</h3>
-<p>This platform is intended to showcase my experience in the data science filed, and give a look into my hobbies! I am currently in my junior year at <em>Cornell University</em> in Ithaca, New York. My major is <em>Information Science</em> and I intend to concentrate in <em>Data Science</em>.</p>
-<hr />
-<h4>My current career goals:</h4>
-<ul>
-  <li><em>Explore</em> the <em>humanitarian use cases</em> of data. I want to make an <em>impact</em> on the world.</li>
-  <li><em>Continue</em> to learn about the different ways data is <em>stored</em> within an enterprise.</li>
-  <li><em>Strengthen</em> my knowledge of web and data oriented <em>programming languages</em>.</li>
-  <li><em>Interact</em> with as many companies that deal with <em>data fabrics</em> as possible.</li>
-</ul>
-<hr />
-<h4>My personal interests:</h4>
-<ul>
-  <li><em>Hobbies:</em></li>
-    <ul>
-      <li>Camping</li>
-      <li>Film & Photography</li>
-      <li>Drones</li>
-      <li>Computer Building</li>
-    </ul>
-  <li><em>Passions:</em></li>
-    <ul>
-      <li>Football</li>
-      <li>Hiking</li>
-      <li>Video Games</li>
-    </ul>
-</ul>
-<hr />
-<h2>Site Map</h2>
-<hr />
-<h3><a href="about.html">About</a></h3>
-<hr />
-<h4><a href="resume.html">Resume</a></h4>
-<h5><a href="references.html">References</a></h5>
-<hr />
-<h3><a href="projects.html">Projects</a></h3>
-<dl>
-  <dt><em><a href="newhiresdemo.html">Law Enforcement Bias Project</a></em></dt>
-  <dd>A new hires demo. Examined arrest records and census data to determine racial bias in NYC, NY Police and Austin, TX police forces.</dd>
-  <dt><em><a href="FHIRhealthcare.html">FHIR Healthcare Project</a></em></dt>
-  <dd>A project focused on synthesizing various patient records across different formats and healthcare groups.</dd>
-</dl>
-<hr />
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">Menu</a>
+		      </div>
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>
+   		</div> <!-- /top-bar -->
+
+   	</div> <!-- /row -->
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="intro-overlay"></div>
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I am Willem Fargo.</h1>
+
+	   			<p class="intro-position">
+	   				<span>Data Science</span>
+	   				<span>User Experience</span>
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>
+
+   		</div>
+   	</div> <!-- /intro-content -->
+
+   	<ul class="intro-social">
+         <li><a href="https://www.linkedin.com/in/willem-fargo-843494ab"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://twitter.com/WillemFargo"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.instagram.com/willemfargo/"><i class="fa fa-instagram"></i></a></li>
+      </ul> <!-- /intro-social -->
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">I am passionate about technology.</p>
+          <p class="lead">I completed my studies at Cornell University in May 2022, earning a Bachelor's Degree in Information Science with concentrations in Data Science and User Experience.</p>
+   			</div>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Goals</h3>
+   			<p>
+          <li>
+            <strong>Design</strong> quality <em>data storage</em> solutions and <em>front-end</em> interfaces.          </li>
+          <li>
+            <strong>Strengthen</strong> my knowledge of <em>web and data oriented programming</em> languages.
+          </li>
+          <li>
+            <strong>Explore</strong> <em>humanitarian use cases</em> of data analytics and <em>accessible</em> design practice.
+          </li>
+          <li>
+            <strong>Build</strong> a <em>network</em> within the broader field of software technology.
+          </li>
+        </p>
+
+   			<ul>
+   				<li>
+   					<strong>College Extracurriculars:</strong>
+            <ul>
+   					  <li><span>Division 1 Football - Offensive Tackle</span></li>
+              <li><span>Theta Delta Chi Fraternity</span></li>
+            </ul>
+   				</li>
+          <li>
+   					<strong>Hobbies:</strong>
+            <ul>
+     					<li><span>Fishing</span></li>
+              <li><span>Film & Photography</span></li>
+              <li><span>Computer Building</span></li>
+              <li><span>Hiking</span></li>
+              <li><span>Video Games</span></li>
+            </ul>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>I am proficient in a variety of programming languages, primarily object-oriented, data, and web.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Python</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>SQL</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>Java</strong>
+				   </li>
+           <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>C#</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>HTML</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS</strong>
+				   </li>
+
+				</ul> <!-- /skill-bars -->
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="docs/Willem-Fargo-Resume.pdf" title="Download CV" class="button button-primary" download>Download CV</a>
+   		</div>
+   	</div>
+
+   </section> <!-- /process-->
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my qualifications.</h1>
+
+   			<p class="lead"> I am seeking a position where I can deliver data-driven solutions, a user-centered mindset, and quality front-end interfaces in a high performance team environment.</p>
+
+   		</div>
+   	</div> <!-- /section-intro-->
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Field Operations Intern</h3>
+	   					<p>June 2020 - August 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Cambridge Semantics Inc.</h4>
+	   					<p>
+                <li>Gained proficiency in Anzo/AnzoGraph. Proprietary software that onboards structured/unstructured data into enterprise-scale knowledge graphs.</li>
+                <li>Collaborated with pre-sales team to create Anzo deployment standardizing medical records across hospital groups on a patient journey timeline.</li>
+                <li>Contributed to intern project: “How does a byte of data move through an enterprise?” with data security and governance research.</li>
+              </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Rideshare/Delivery Driver</h3>
+	   					<p>January 2020 – Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Uber/Grubhub</h4>
+	   					<p>Part-Time</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Warehouse Worker</h3>
+	   					<p>June 2019 – January 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>K&M Tire</h4>
+	   					<p>Full-Time</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /resume-timeline -->
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor’s Degree</h3>
+	   					<p>May 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Cornell University</h4>
+	   					<p>Information Science</p>
+              <p>Concentrations: Data Science and User Experience.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->
+
+   		</div> <!-- /col-twelve -->
+
+   	</div> <!-- /resume-timeline -->
+
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>Check Out Some of My Work.</h1>
+
+   		</div>
+   	</div> <!-- /section-intro-->
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/fhir-model-linking.PNG" alt="FHIR Model Linking">
+	                  <a href="#modal-01" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Cambrdige Semantics FHIR Project</h3>
+		     					    	 <span class="folio-types">
+		     					       	  Data Analytics and Visualization
+		     					       </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/thumb_009.jpg" alt="Thumbs Up">
+	               	<a href="#modal-02" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Work References</h3>
+		     					    	<span class="folio-types">
+		     					       	  Cambridge Semantics References
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/model_overview.PNG"alt="Arrest Demo Model Overview">
+	                  <a href="#modal-03" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Cambrdige Semantics Arrest Records Project</h3>
+		     					    	<span class="folio-types">
+		     					       	  Data Analytics and Visualization
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Beetle</h3>
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lighthouse</h3>
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Salad</h3>
+		     					    	<span class="folio-types">
+		     					       	  Branding
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/fhir-patient-journey-timeline.PNG" alt="FHIR Patient Journey Timeline." />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>FHIR Standardization and Patient Journey Timeline</h4>
+					      <p>Worked with <em>Anzo/AnzoGraph</em> to create a model that standardizes patient EMRs (Electronic Medical Records) across different hospital groups and provides a detailed timeline of patient visits.</p>
+
+					      <div class="categories">Data Analytics and Visualization</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="FHIRhealthcare.html">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/thumb_009.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Work References</h4>
+					      <p>References from previous coworkers at Cambridge Semantics Inc.</p>
+
+					      <div class="categories">Cambridge Semantics References</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="references.html">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/arrest chart.PNG" alt="Arrest Chart" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Arrest Records Project</h4>
+					      <p>First project at Cambridge Semantics comparing arrest records in Austin, TX and NYC, NY.</p>
+
+					      <div class="categories">Data Analytics and Visualization</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="newhiresdemo.html">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Beetle</h4>
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Salad</h4>
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Branding</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper -->
+
+   		</div>  <!-- /twelve -->
+
+   	</div> <!-- /portfolio-content -->
+
+	</section> <!-- /portfolio -->
+
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>Redwood, NY</p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>willemfargo@gmail.com</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Phone: (603) 244-6581</p>
+
+   		</div>
+
+   	</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+            <li><a href="https://www.linkedin.com/in/willem-fargo-843494ab"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/WillemFargo"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/willemfargo/"><i class="fa fa-instagram"></i></a></li>
+
+			   </ul>
+
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Kards 2016.</span>
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+		         </div>
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
 </body>
+
 </html>
